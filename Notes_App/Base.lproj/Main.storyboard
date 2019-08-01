@@ -5,8 +5,8 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Notes_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ScX-u5-ZTK"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Tp-81-Xpv"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,12 +39,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Njl-EK-RPd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="H7K-cQ-ptc"/>
+                            <constraint firstItem="Njl-EK-RPd" firstAttribute="bottom" secondItem="0Tp-81-Xpv" secondAttribute="top" id="H7K-cQ-ptc"/>
                             <constraint firstItem="Njl-EK-RPd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="TpG-ep-caN"/>
                             <constraint firstAttribute="trailing" secondItem="Njl-EK-RPd" secondAttribute="trailing" id="h27-xK-EJa"/>
                             <constraint firstItem="Njl-EK-RPd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nTP-Gg-CsH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="218-Zx-Gjq"/>
                     <connections>
@@ -55,30 +58,43 @@
         <!--Note-->
         <scene sceneID="NUh-eh-NdG">
             <objects>
-                <viewController title="Note" id="W4e-fg-HZC" customClass="DetailViewController" customModule="Notes_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" title="Note" id="W4e-fg-HZC" customClass="DetailViewController" customModule="Notes_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ggn-w3-Lgw"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Oc-va-sxA"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="z4M-jL-ovV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qyI-Qc-jiD">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hi" borderStyle="roundedRect" placeholder="Note Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6B3-FY-rov">
+                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nEH-gf-9I3">
+                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qyI-Qc-jiD" secondAttribute="trailing" id="O64-iQ-Uhu"/>
-                            <constraint firstItem="qyI-Qc-jiD" firstAttribute="leading" secondItem="z4M-jL-ovV" secondAttribute="leading" id="kbE-fa-p0A"/>
-                            <constraint firstItem="qyI-Qc-jiD" firstAttribute="bottom" secondItem="EVD-Cg-gy4" secondAttribute="bottom" id="ogm-mp-UjB"/>
-                            <constraint firstItem="qyI-Qc-jiD" firstAttribute="top" secondItem="EVD-Cg-gy4" secondAttribute="top" id="sNG-FJ-cNK"/>
+                            <constraint firstItem="nEH-gf-9I3" firstAttribute="leading" secondItem="6B3-FY-rov" secondAttribute="leading" id="1rC-Ui-zV1"/>
+                            <constraint firstAttribute="trailing" secondItem="6B3-FY-rov" secondAttribute="trailing" id="8hM-Ob-ZlE"/>
+                            <constraint firstItem="nEH-gf-9I3" firstAttribute="trailing" secondItem="6B3-FY-rov" secondAttribute="trailing" id="Dqm-m2-4LE"/>
+                            <constraint firstItem="6B3-FY-rov" firstAttribute="top" secondItem="ggn-w3-Lgw" secondAttribute="bottom" id="Keo-pu-JGP"/>
+                            <constraint firstItem="6B3-FY-rov" firstAttribute="leading" secondItem="z4M-jL-ovV" secondAttribute="leading" id="L44-2f-7zk"/>
+                            <constraint firstItem="nEH-gf-9I3" firstAttribute="bottom" secondItem="8Oc-va-sxA" secondAttribute="top" id="cqW-u1-r1o"/>
+                            <constraint firstItem="nEH-gf-9I3" firstAttribute="top" secondItem="6B3-FY-rov" secondAttribute="bottom" id="hq1-Zr-rr2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EVD-Cg-gy4"/>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="qyI-Qc-jiD" id="R4P-71-h4h"/>
+                        <outlet property="textField" destination="6B3-FY-rov" id="PFl-ZO-8xC"/>
+                        <outlet property="textView" destination="nEH-gf-9I3" id="j7p-VW-vBk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdi-wY-Teo" userLabel="First Responder" sceneMemberID="firstResponder"/>

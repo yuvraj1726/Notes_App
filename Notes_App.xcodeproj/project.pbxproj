@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F603AF4622E53F1E00AB42BD /* untitled-2-08-120x120.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F603AF4522E53F1E00AB42BD /* untitled-2-08-120x120.jpg */; };
+		F603AF4822EFCB0B00AB42BD /* apple-touch-icon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = F603AF4722EFCB0B00AB42BD /* apple-touch-icon-180x180.png */; };
 		F6E667CB22CAD94B00F00CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E667CA22CAD94B00F00CD2 /* AppDelegate.swift */; };
 		F6E667CD22CAD94B00F00CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E667CC22CAD94B00F00CD2 /* ViewController.swift */; };
 		F6E667D022CAD94B00F00CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E667CE22CAD94B00F00CD2 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F603AF4522E53F1E00AB42BD /* untitled-2-08-120x120.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "untitled-2-08-120x120.jpg"; path = "../../../Downloads/untitled-2-08-120x120.jpg"; sourceTree = "<group>"; };
+		F603AF4722EFCB0B00AB42BD /* apple-touch-icon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-180x180.png"; sourceTree = "<group>"; };
 		F6E667C722CAD94B00F00CD2 /* Notes_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E667CA22CAD94B00F00CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E667CC22CAD94B00F00CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +67,9 @@
 				F6E667DF22CBD24700F00CD2 /* DetailViewController.swift */,
 				F6E667CE22CAD94B00F00CD2 /* Main.storyboard */,
 				F6E667D422CAD94D00F00CD2 /* Assets.xcassets */,
+				F603AF4522E53F1E00AB42BD /* untitled-2-08-120x120.jpg */,
 				F6E667D622CAD94D00F00CD2 /* LaunchScreen.storyboard */,
+				F603AF4722EFCB0B00AB42BD /* apple-touch-icon-180x180.png */,
 				F6E667D922CAD94D00F00CD2 /* Info.plist */,
 				F6E667D122CAD94B00F00CD2 /* Notes_App.xcdatamodeld */,
 			);
@@ -128,6 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F603AF4822EFCB0B00AB42BD /* apple-touch-icon-180x180.png in Resources */,
+				F603AF4622E53F1E00AB42BD /* untitled-2-08-120x120.jpg in Resources */,
 				F6E667D822CAD94D00F00CD2 /* LaunchScreen.storyboard in Resources */,
 				F6E667D522CAD94D00F00CD2 /* Assets.xcassets in Resources */,
 				F6E667D022CAD94B00F00CD2 /* Main.storyboard in Resources */,
@@ -290,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Notes_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Notes_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
